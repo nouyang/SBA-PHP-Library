@@ -8,9 +8,7 @@ class SBA_API {
 	
 	//Used by business licenses and permits
 	private $_business_categories 	= array('doing business as', 'entity filing', 'employer requirements', 'state licenses', 'tax registration');
-	private $_employer_requirements 	= array('insurance requirements', 'new hire reporting requirements', 'state tax registration', 'workplace poster requirements');
-	private $_business_type 			= array('general business licenses', 'auto dealership', 'barber shop', 'beauty salon', 'child care services', 'construction contractor', 'debt collection agency', 'electrician', 'massage', 'therapist', 'plumber', 'restaurant');
-
+	private $_business_type = array('general business licenses', 'auto dealership', 'barber shop', 'beauty salon', 'child care services', 'construction contractor', 'debt collection agency', 'electrician', 'massage', 'therapist', 'plumber', 'restaurant', 'insurance requirements', 'new hire reporting requirements', 'state tax registration', 'workplace poster requirements')
 	//Used by loans and grants search api
 	private $_loans_industry 	= array('agriculture', 'child care', 'environmental management', 'health care', 'manufacturing', 'technology', 'tourism'); 
 	private $_loans_specialty	= array('general_purpose', 'development', 'exporting', 'contractor', 'green', 'military', 'minority', 'woman', 'disabled', 'rural', 'disaster');
@@ -193,7 +191,7 @@ class SBA_API {
 	 * Format:  		http://api.sba.gov/geodata/city_county_data_for_state_of/STATE ABBREVIATION.FORMAT
 							http://api.sba.gov/geodata/city_data_for_state_of/STATE ABBREVIATION.FORMAT
 							http://api.sba.gov/geodata/county_data_for_state_of/STATE ABBREVIATION.FORMAT
-							http://api.sba.gov/geodata/all_data_for_city_of/centerville/CITY NAME/STATE ABBREVIATION.FORMAT
+							http://api.sba.gov/geodata/all_data_for_city_of/CITY NAME/STATE ABBREVIATION.FORMAT
 							http://api.sba.gov/geodata/all_data_for_county_of/COUNTY NAME/STATE ABBREVIATION.xml
 	 * Example: 		http://api.sba.gov/geodata/city_county_data_for_state_of/ca.xml
 	 * URL:				http://www.sba.gov/content/us-city-and-county-web-data-api-city-county-data-all-data-methods
